@@ -6,9 +6,9 @@ int call_count() {
 }
 
 int main() {
-  printf("%d\n"call_count());
-  printf("%d\n"call_count());
-  printf("%d\n"call_count());
+  printf("%d\n",call_count());
+  printf("%d\n",call_count());
+  printf("%d\n",call_count());
 
   return 0;
 }
