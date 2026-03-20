@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 void swap(int *x, int *y) {
-  *x =addr.Of
-  
-
+ int temp;
+ temp = *y;
+ *y = *x;
+ *x = temp;
 }
 
 int main() {
@@ -11,7 +12,7 @@ int main() {
 
     printf("x = %d, y = %d\n", x, y);
     // TODO: swap 함수 호출
-    swap(        );
+    swap(&x,&y);
     printf("x = %d, y = %d\n", x, y);
 
     return 0;
