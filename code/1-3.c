@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int power(int base, int exp) {
-  int result =0;
+  int result = 1;
     if(exp == 0){
+      result =0;
       return result;
     } else if(exp == 1){
       result = result*base;
@@ -10,7 +11,7 @@ int power(int base, int exp) {
     }else{
       result = result*base;
       exp--;
-      power(base, exp);
+      return power(base, exp);
     }
 }
 
