@@ -5,9 +5,10 @@ int max_of(int count, ...){
   va_list ap;
   va_start(ap, count);
   int result = va_arg(ap, int);
-  for(int i =0; i < count; i++){
-    if (result < va_arg(ap, int)){
-      result = va_arg(ap, int);
+  for(int i =1; i < count; i++){
+    int current = va_arg(ap, int);
+    if (result < current)){
+      result = current;
     }
   }
   return result;
