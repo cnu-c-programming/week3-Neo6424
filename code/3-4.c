@@ -7,7 +7,7 @@ int max_of(int count, ...){
   int result = va_arg(ap, int);
   for(int i =1; i < count; i++){
     int current = va_arg(ap, int);
-    if (result < current)){
+    if (result < current){
       result = current;
     }
   }
