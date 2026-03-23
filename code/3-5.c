@@ -7,9 +7,8 @@ int my_sum(char c, int num, ...) {
   
   switch(c) {
     case 'S':
-      for(int i =0; i <num; i++){
-        printf("%s ",va_arg(args, char*));
-      }
+      printf("%s ",va_arg(args, char*));
+      printf("%s",va_arg(args, char*));
       printf("\n");
       break;
     case 'C':
